@@ -13,9 +13,13 @@ function App() {
     { id: 106, name: "Fiona", age: 24, gender: "female" }
   ])
 
+
+
   const handleRemove = (id) => {
     setStudents(students.filter(student => student.id !== id))
   }
+
+
 
   return (
     <>
@@ -29,7 +33,7 @@ function App() {
               <small>{student.age} Years Old</small>
               <p>{student.gender}</p>
 
-              <button onClick={() => handleRemove(student.id)} className="btn btn-light btn-sm mt-2">remove</button>
+              <button onClick={() => handleRemove(student.id)} className="btn btn-light btn-sm mt-2">remove </button>
             </div>
           )
         }
@@ -37,3 +41,4 @@ function App() {
     </>
   )
 }
+
