@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #0f172a;
+}
+
+.app-header {
+  width: 80%;
+  margin: 0 auto 30px;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 32px;
+}
+
+.app-header p {
+  margin-top: 8px;
+  color: #94a3b8;
+}
+
+.app-form {
+  width: 100%;
+}
+
+.app-list {
+  width: 100%;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-wrapper {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.user-form {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  width: 190px;
+  height: 45px;
+
+  padding: 0 14px;
+
+  border: 1px solid #475569;
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: #0f172a;
+  color: #e2e8f0;
+
+  transition: 0.2s;
+}
+
+.form-input::placeholder {
+  color: #64748b;
+}
+
+.form-input:focus {
+  border-color: #818cf8;
+
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.form-input option {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error-message {
+  margin: 5px 0 0;
+
+  color: #f87171;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.add-user-button {
+  height: 45px;
+
+  padding: 0 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #6366f1;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.add-user-button:hover {
+  background: #818cf8;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+.add-user-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   USER LIST
+========================= */
+
+.user-list {
+  width: 80%;
+  margin: 35px auto 0;
+
+  background: #1e293b;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  border: 1px solid #334155;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.users-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+
+/* =========================
+   TABLE HEADER
+========================= */
+
+.table-head {
+  background: #312e81;
+}
+
+.table-title {
+  padding: 16px 20px;
+
+  color: #e0e7ff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-align: left;
+
+  border-bottom: 1px solid #4338ca;
+}
+
+
+/* =========================
+   TABLE ROW
+========================= */
+
+.user-row {
+  transition: 0.2s;
+}
+
+.user-row:hover {
+  background: #263449;
+}
+
+.user-cell {
+  padding: 16px 20px;
+
+  border-bottom: 1px solid #334155;
+
+  color: #cbd5e1;
+
+  font-size: 15px;
+}
+
+.user-row:last-child .user-cell {
+  border-bottom: none;
+}
+
+
+/* =========================
+   NAME
+========================= */
+
+.user-cell:first-child {
+  color: #a5b4fc;
+  font-weight: 600;
+}
+
+
+/* =========================
+   GENDER
+========================= */
+
+.user-cell:nth-child(3) {
+  text-transform: capitalize;
+  color: #94a3b8;
+}
+
+
+/* =========================
+   SALARY
+========================= */
+
+.user-cell:last-child {
+  color: #4ade80;
+  font-weight: 600;
+}
