@@ -1,0 +1,15 @@
+{
+  "todo": [
+    {
+      "title": "go to school",
+      "id": "FLZ8VsboqRE",
+      "completed": false
+    },
+    {
+      "title": "eat burger",
+      "id": "V33nDwFGC74",
+      "completed": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

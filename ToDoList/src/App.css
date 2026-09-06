@@ -1,0 +1,452 @@
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, #312e81 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #1e1b4b 0%, transparent 35%),
+    #09090f;
+  color: #f8fafc;
+}
+
+
+/* ========================================
+   APP
+======================================== */
+
+.app {
+  min-height: 100vh;
+  padding: 70px 20px;
+}
+
+.app-container {
+  width: 80%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.app-title {
+  margin: 0;
+
+  text-align: center;
+
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: -1px;
+
+  color: #ffffff;
+
+  text-shadow:
+    0 0 20px rgba(99, 102, 241, 0.5);
+}
+
+.app-subtitle {
+  margin: 12px 0 40px;
+
+  text-align: center;
+
+  color: #94a3b8;
+
+  font-size: 16px;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.form-wrapper {
+  margin-bottom: 30px;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.todo-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px;
+
+  background: rgba(30, 41, 59, 0.65);
+
+  border: 1px solid rgba(148, 163, 184, 0.15);
+
+  border-radius: 16px;
+
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* INPUT */
+
+.todo-input {
+  flex: 1;
+
+  height: 50px;
+
+  padding: 0 18px;
+
+  background: transparent;
+
+  border: none;
+  outline: none;
+
+  color: #f8fafc;
+
+  font-size: 16px;
+}
+
+.todo-input::placeholder {
+  color: #64748b;
+}
+
+
+/* ADD BUTTON */
+
+.add-task-btn {
+  height: 50px;
+
+  padding: 0 22px;
+
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 20px rgba(99, 102, 241, 0.3);
+
+  transition: all 0.25s ease;
+}
+
+.add-task-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 25px rgba(99, 102, 241, 0.45);
+}
+
+.add-task-btn:active {
+  transform: scale(0.97);
+}
+
+
+/* ERROR */
+
+.error-message {
+  margin: 10px 5px 0;
+
+  color: #fb7185;
+
+  font-size: 14px;
+}
+
+
+/* ========================================
+   TODO LIST
+======================================== */
+
+.todo-list {
+  width: 100%;
+}
+
+.todo-table {
+  width: 100%;
+
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+
+/* ========================================
+   TODO ROW
+======================================== */
+
+.todo-row {
+  background: rgba(30, 41, 59, 0.72);
+
+  border: 1px solid rgba(148, 163, 184, 0.1);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.todo-row:hover {
+  background: rgba(51, 65, 85, 0.8);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* CELLS */
+
+.todo-row td {
+  padding: 18px 20px;
+}
+
+.todo-row td:first-child {
+  border-radius: 14px 0 0 14px;
+}
+
+.todo-row td:last-child {
+  border-radius: 0 14px 14px 0;
+}
+
+
+/* ========================================
+   CHECKBOX
+======================================== */
+
+.todo-check {
+  width: 60px;
+
+  text-align: center;
+}
+
+
+/* CIRCLE */
+
+.check-btn {
+  width: 28px;
+  height: 28px;
+
+  padding: 0;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #64748b;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+
+/* HOVER */
+
+.check-btn:hover {
+  border-color: #818cf8;
+
+  transform: scale(1.12);
+
+  box-shadow:
+    0 0 15px rgba(99, 102, 241, 0.4);
+}
+
+
+/* CHECKED */
+
+.check-btn.checked {
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #8b5cf6
+  );
+
+  border-color: #818cf8;
+
+  box-shadow:
+    0 0 18px rgba(99, 102, 241, 0.45);
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.todo-title {
+  width: 55%;
+
+  color: #f1f5f9;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+.todo-title.task-done {
+  color: #64748b;
+
+  text-decoration: line-through;
+
+  opacity: 0.65;
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+.todo-status {
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* COMPLETED */
+
+.todo-status.completed {
+  color: #4ade80;
+}
+
+
+/* PENDING */
+
+.todo-status.pending {
+  color: #fbbf24;
+}
+
+
+/* ========================================
+   DELETE
+======================================== */
+
+.todo-action {
+  text-align: center;
+}
+
+.delete-btn {
+  padding: 9px 15px;
+
+  border: 1px solid rgba(248, 113, 113, 0.25);
+
+  border-radius: 9px;
+
+  background: rgba(239, 68, 68, 0.1);
+
+  color: #f87171;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.delete-btn:hover {
+  background: #ef4444;
+
+  color: white;
+
+  border-color: #ef4444;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 6px 18px rgba(239, 68, 68, 0.3);
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .app {
+    padding: 35px 15px;
+  }
+
+  .app-container {
+    width: 100%;
+  }
+
+  .app-title {
+    font-size: 34px;
+  }
+
+  .app-subtitle {
+    margin-bottom: 25px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+
+    padding: 10px;
+  }
+
+  .todo-input {
+    width: 100%;
+  }
+
+  .add-task-btn {
+    width: 100%;
+  }
+
+  .todo-row td {
+    padding: 13px 8px;
+  }
+
+  .todo-title {
+    font-size: 14px;
+  }
+
+  .todo-status {
+    font-size: 11px;
+  }
+
+  .delete-btn {
+    padding: 7px 9px;
+
+    font-size: 11px;
+  }
+
+  .check-btn {
+    width: 25px;
+    height: 25px;
+  }
+}
