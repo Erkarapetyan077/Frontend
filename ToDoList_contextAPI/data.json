@@ -2,23 +2,23 @@
   "todo": [
     {
       "title": "go to school",
-      "completed": false,
-      "id": "XNxzFjm0tBs"
+      "completed": true,
+      "id": "8kcdG17rt_s"
     },
     {
-      "title": "eat burger",
+      "title": "eat burger ",
       "completed": false,
-      "id": "wrR61Jq8yKw"
+      "id": "T3gfE7qNcUg"
     },
     {
-      "title": "write a book",
+      "title": "kill people",
       "completed": false,
-      "id": "_zOi3r_3Ac4"
+      "id": "aKlAtukwWBY"
     },
     {
-      "title": "take a car",
-      "completed": false,
-      "id": "qxIehXoNJTk"
+      "title": "buy car",
+      "completed": true,
+      "id": "6XZdCkW_xSU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

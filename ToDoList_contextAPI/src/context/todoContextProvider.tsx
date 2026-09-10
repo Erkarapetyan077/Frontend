@@ -26,7 +26,7 @@ export const ToDoContextProvider: React.FC<Props> = ({ children }) => {
 
         if (exists) {
             setError("The title exists.");
-            return
+            return;
         }
 
         axios.post("http://localhost:3001/todo", {
@@ -74,13 +74,23 @@ export const ToDoContextProvider: React.FC<Props> = ({ children }) => {
 
     const Done = () => {
 
-        setTodos(todos.filter(el => el.completed === true))
+        axios.get("http://localhost:3001/todo").then(
+            response => {
+
+                setTodos(response.data.filter(el => el.completed === true))
+            }
+        )
 
     }
 
     const Active = () => {
+        axios.get("http://localhost:3001/todo").then(
+            response => {
 
-        setTodos(todos.filter(el => el.completed === false))
+                setTodos(response.data.filter(el => el.completed === false))
+            }
+        )
+
 
     }
 
