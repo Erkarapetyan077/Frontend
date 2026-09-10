@@ -1,0 +1,25 @@
+{
+  "todo": [
+    {
+      "title": "go to school",
+      "completed": false,
+      "id": "XNxzFjm0tBs"
+    },
+    {
+      "title": "eat burger",
+      "completed": false,
+      "id": "wrR61Jq8yKw"
+    },
+    {
+      "title": "write a book",
+      "completed": false,
+      "id": "_zOi3r_3Ac4"
+    },
+    {
+      "title": "take a car",
+      "completed": false,
+      "id": "qxIehXoNJTk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
