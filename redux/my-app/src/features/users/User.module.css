@@ -1,0 +1,93 @@
+.container {
+  width: min(100% - 32px, 1000px);
+  margin: 40px auto;
+  color: #202438;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 20px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.heading span {
+  display: inline-grid;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  place-items: center;
+  border-radius: 999px;
+  background: #eee9fa;
+  color: #704cb6;
+  font-size: 0.9rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(32 36 56 / 8%);
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #ececf2;
+}
+
+.table th {
+  background: #f5f2fb;
+  color: #514176;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.table tbody tr:hover {
+  background: #faf9fd;
+}
+
+.deleteButton {
+  padding: 7px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #fff0f0;
+  color: #c43e4d;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.deleteButton:hover {
+  background: #c43e4d;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: calc(100% - 20px);
+    margin: 24px auto;
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 620px;
+  }
+
+  .table th,
+  .table td {
+    padding: 11px 12px;
+  }
+}

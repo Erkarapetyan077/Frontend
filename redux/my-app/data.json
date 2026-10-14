@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Olivia",
+      "surname": "Bennett",
+      "salary": 72000,
+      "gender": "female"
+    },
+    {
+      "id": "2",
+      "name": "Liam",
+      "surname": "Carter",
+      "salary": 68000,
+      "gender": "male"
+    },
+    {
+      "id": "3",
+      "name": "Sophia",
+      "surname": "Reed",
+      "salary": 84500,
+      "gender": "female"
+    },
+    {
+      "id": "4",
+      "name": "Noah",
+      "surname": "Hayes",
+      "salary": 91000,
+      "gender": "male"
+    },
+    {
+      "id": "6",
+      "name": "Ethan",
+      "surname": "Foster",
+      "salary": 77500,
+      "gender": "male"
+    },
+    {
+      "id": "7",
+      "name": "Mia",
+      "surname": "Collins",
+      "salary": 80200,
+      "gender": "female"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
