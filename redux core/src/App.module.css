@@ -1,0 +1,33 @@
+.table{
+  border:  1px solid white;
+  text-align: center;
+  width:100%;
+  border-collapse: collapse
+}
+
+.table,
+.table tr,
+.table td,
+.table th {
+  border: 1px solid white;
+}
+
+.table tr:hover{
+  background: indianred;
+  cursor: pointer;
+}
+
+.delete {
+  padding: 2px 8px;
+  border: 1px solid indianred;
+  border-radius: 4px;
+  background: white;
+  color: indianred;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.delete:hover {
+  background: red;
+  color: white;
+}
